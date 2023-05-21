@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CourseForm from "./CourseForm";
 import * as courseApi from "../api/courseApi";
 import { toast } from "react-toastify";
+import styles from "../css/coursePage.css";
 function ManageCoursPage(props) {
   const [course, setCourse] = useState({
     id: null,
@@ -31,14 +32,13 @@ function ManageCoursPage(props) {
   };
 
   return (
-    <>
-      <h1>Manage Course</h1>
+    <div>
       <CourseForm
         course={course}
         onChange={handleChange}
         onSubmit={handleSubmit}
       ></CourseForm>
-    </>
+    </div>
   );
 }
 

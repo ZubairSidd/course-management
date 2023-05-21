@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const TextInput = (props) => {
-  let wrapperClass = "form-group col-md-6";
+  let wrapperClass = "form-group";
   if (props.error.length > 0) {
     wrapperClass += " has-error";
   }
